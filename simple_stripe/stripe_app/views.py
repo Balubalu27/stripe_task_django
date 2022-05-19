@@ -34,7 +34,7 @@ class CreateCheckoutSession(View):
                         'unit_amount': item.price
                     },
                     'quantity': 1
-                }],
+                }]
             )
             return JsonResponse({'sessionId': checkout_session['id']})
         except Exception as ex:
