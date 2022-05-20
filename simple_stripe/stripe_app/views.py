@@ -2,10 +2,10 @@ import stripe
 from django.http import JsonResponse
 from django.views import View
 from django.views.generic import DetailView, TemplateView
+from stripe_app.constants import cancel_url, currency, domain_url, success_url
+from stripe_app.models import Item
 
 from simple_stripe import settings
-from stripe_app.constants import domain_url, success_url, cancel_url, currency
-from stripe_app.models import Item
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
