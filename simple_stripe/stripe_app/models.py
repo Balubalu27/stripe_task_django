@@ -5,7 +5,7 @@ class Item(models.Model):
     """ Товар """
     name = models.CharField('Название', max_length=150)
     description = models.CharField('Описание', max_length=500)
-    price = models.IntegerField('Цена в центах')
+    price = models.IntegerField('Цена в центах', default=0)
 
     def __str__(self):
         return self.name

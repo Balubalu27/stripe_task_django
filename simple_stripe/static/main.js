@@ -5,9 +5,7 @@ fetch("/config/")
   document.querySelector("#submitBtn").addEventListener("click", () => {
     let pathname = window.location.pathname.split('/')
     const pk_id = pathname[2]
-
-    fetch(`/buy/${pk_id}`) // url
-
+    fetch(`/buy/${pk_id}`)
     .then((result) => { return result.json(); })
     .then((data) => {
       console.log(data);

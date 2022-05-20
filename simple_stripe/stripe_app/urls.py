@@ -1,6 +1,7 @@
 from django.urls import path
 
-from stripe_app.views import CreateCheckoutSession, StripeConfig, SuccessView, CancelledView, ItemDetailView
+from stripe_app.views import (CancelledView, CreateCheckoutSession,
+                              ItemDetailView, StripeConfig, SuccessView)
 
 urlpatterns = [
     path('buy/<int:pk>/', CreateCheckoutSession.as_view(), name='buy'),
