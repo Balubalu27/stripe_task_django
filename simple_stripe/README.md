@@ -17,6 +17,7 @@ populating_database.py - скрипт заполняющий БД 9 запися
 
 Для создания суперпользователя выполнить команду: 
 docker exec -it stripe_proj python /usr/src/simple_stripe/manage.py createsuperuser
+после чего заполнить username и password.
 
 После чего можно отправлять GET запросы на следующие url:
 
