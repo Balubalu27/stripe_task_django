@@ -12,3 +12,4 @@ RUN pip install -r /usr/src/requirements.txt
 COPY . /usr/src/simple_stripe
 
 EXPOSE 8000
+ENTRYPOINT ["/usr/src/simple_stripe/entrypoint.sh"]
