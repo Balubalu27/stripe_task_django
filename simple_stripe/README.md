@@ -14,7 +14,7 @@
 
 docker exec -it stripe_proj python /usr/src/simple_stripe/manage.py populating_database
 
-Скрипт заполнит БД 9 записями Item.
+populating_database.py - скрипт заполняющий БД 9 записями Item.
 
 После чего можно отправлять GET запросы на следующие url:
 
